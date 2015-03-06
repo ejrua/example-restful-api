@@ -44,7 +44,7 @@ app.get('/api/:coleccion', auth, function(req, res, next) {
   });
 });
 
-app.post('/api/:collecion', auth, function(req, res, next) {
+app.post('/api/:colecion', auth, function(req, res, next) {
   req.collection.insert(req.body, {}, function(e, results){
     if (e) return next(e);
     res.send(results);
